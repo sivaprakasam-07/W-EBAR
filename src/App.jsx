@@ -1,30 +1,27 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
-// import MenuPage from "./pages/MenuPage";
-// import AboutUsPage from "./pages/AboutUsPage";
-// import Navbar from "./components/Navbar";
-import { AnimatePresence } from "framer-motion";
+import MenuPage from "./pages/MenuPage";
+import AboutUs from "./pages/AboutUsPage";
+import Navbar from "./components/Navbar"; 
+import Login from "./pages/Login";
 
-function App() {
-  const [selectedItem, setSelectedItem] = useState(null);
-
-  return (
-    <Router>
-      <Navbar />
-      <AnimatePresence mode="wait">
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route
-            path="/menu"
-            element={<MenuPage setSelectedItem={setSelectedItem} />}
-          />
-          <Route path="/about" element={<AboutUsPage />} />
-        </Routes>
-      </AnimatePresence>
-      {selectedItem && <ARModelViewer item={selectedItem} onClose={() => setSelectedItem(null)} />}
-    </Router>
-  );
-}
+const App = () => {
+    return (
+        <Router>
+            <div className="bg-dark min-h-screen text-white">
+                <Navbar /> {/* Navbar remains visible on all pages */}
+                <div className="pt-16"> {/* Adds padding so content doesn't hide behind navbar */}
+                    <Routes>
+                        <Route path="/" element={<LandingPage />} />
+                        <Route path="/menu" element={<MenuPage />} />
+                        <Route path="/about" element={<AboutUs />} />
+                        <Route path="/login" element={<Login />} />
+                    </Routes>
+                </div>
+            </div>
+        </Router>
+    );
+};
 
 export default App;
