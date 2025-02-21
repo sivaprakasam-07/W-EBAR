@@ -16,9 +16,9 @@ const App = () => {
                 <div className="pt-16"> {/* Adds padding so content doesn't hide behind navbar */}
                     <Routes>
                         <Route path="/" element={<Navigate to="/login" />} /> {/* Redirect to login page */}
-                        <Route path="/landing" element={<LandingPage />} />
+                        <Route path="/landing" element={<Landingpage />} />
                         <Route path="/menu" element={<MenuPage />} />
-                        <Route path="/about" element={<AboutUs />} />
+                        <Route path="/about" element={<Aboutus />} />
                         <Route path="/login" element={<Login />} />
                     </Routes>
                 </div>
