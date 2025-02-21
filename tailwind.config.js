@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  purge: false, // Add this line if using Tailwind CSS v2.x
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
