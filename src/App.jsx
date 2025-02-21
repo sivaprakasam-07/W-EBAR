@@ -1,24 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import LandingPage from "./pages/Landingpage"; // Corrected import path
+import LandingPage from "./pages/LandingPage"; // ✅ Ensure correct case
 import MenuPage from "./pages/MenuPage";
-import Aboutus from "./pages/AboutusPage"; // Corrected import path
-import Navbar from "./components/Navbar"; // Corrected import path
+import AboutusPage from "./pages/AboutusPage"; // ✅ Ensure correct case
+import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
-import { Toaster } from "react-hot-toast"; // Import Toaster
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
     return (
         <Router>
             <div className="bg-dark min-h-screen text-white">
-                <Navbar /> {/* Navbar remains visible on all pages */}
-                <Toaster /> {/* Add Toaster for toast notifications */}
-                <div className="pt-16"> {/* Adds padding so content doesn't hide behind navbar */}
+                <Navbar />
+                <Toaster />
+                <div className="pt-16">
                     <Routes>
-                        <Route path="/" element={<Navigate to="/login" />} /> {/* Redirect to login page */}
-                        <Route path="/landing" element={<Landingpage />} />
+                        <Route path="/" element={<Navigate to="/login" />} />
+                        <Route path="/landing" element={<LandingPage />} /> {/* ✅ Fixed */}
                         <Route path="/menu" element={<MenuPage />} />
-                        <Route path="/about" element={<Aboutus />} />
+                        <Route path="/about" element={<AboutusPage />} /> {/* ✅ Fixed */}
                         <Route path="/login" element={<Login />} />
                     </Routes>
                 </div>
