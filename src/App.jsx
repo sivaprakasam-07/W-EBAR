@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
+import LandingPage from "./pages/Landingpage"; // Corrected import path
 import MenuPage from "./pages/MenuPage";
-import AboutUs from "./pages/AboutUsPage";
-import Navbar from "./components/Navbar"; 
+import AboutUs from "./pages/AboutusPage"; // Corrected import path
+import Navbar from "./components/NavBar"; // Corrected import path
 import Login from "./pages/Login";
 import { Toaster } from "react-hot-toast"; // Import Toaster
 
