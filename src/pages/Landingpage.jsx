@@ -8,7 +8,7 @@ const LandingPage = () => {
     <div className="relative h-screen flex items-center justify-end px-4 md:px-6 bg-cover bg-center overflow-hidden">
       {/* Background Image with Parallax Effect */}
       <motion.img
-        src="src\assets\landing bg.jpg"
+        src="src/assets/landing bg.jpg"
         alt="Landing Background"
         className="absolute inset-0 w-full h-full object-cover z-0"
         initial={{ scale: 1.1 }}
@@ -45,15 +45,15 @@ const LandingPage = () => {
 
           {/* Buttons with Animation */}
           <div className="mt-6 flex flex-col md:flex-row justify-center md:justify-start gap-6">
-            <a href="https://we-bar-007.web.app/" target="_blank" rel="noopener noreferrer">
-              <motion.button 
-                className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg shadow-md transition"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Flame /> Explore Menu
-              </motion.button>
-            </a>
+            <motion.button 
+              className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg shadow-md transition"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => (window.location.href = "https://we-bar-007.web.app/")}
+            >
+              <Flame /> Explore Menu
+            </motion.button>
+
             <Link to="/about">
               <motion.button 
                 className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg shadow-md transition"

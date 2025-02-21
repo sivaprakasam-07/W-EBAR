@@ -24,7 +24,7 @@ const Navbar = () => {
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex space-x-6 text-lg">
                     <NavLink to="/landing" label="Home"/>
-                    <NavLink to="https://we-bar-007.web.app/" label="Menu" external />
+                    <NavLink to="https://we-bar-007.web.app/" label="Menu" />
                     <NavLink to="/about" label="About Us"/>
                     <NavLink to="/login" label="Login"/>
                 </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
                     className="md:hidden flex flex-col items-center space-y-4 bg-black/30 backdrop-blur-lg py-4 mt-2 border border-white/20 rounded-lg"
                 >
                     <NavLink to="/" label="Home" onClick={() => setIsOpen(false)} />
-                    <NavLink to="https://we-bar-007.web.app/" label="Menu" onClick={() => setIsOpen(false)} external />
+                    <NavLink to="https://we-bar-007.web.app/" label="Menu" onClick={() => setIsOpen(false)} />
                     <NavLink to="/about" label="About Us" onClick={() => setIsOpen(false)} />
                     <NavLink to="/login" label="Login" onClick={() => setIsOpen(false)} />
                 </motion.div>
@@ -64,6 +64,7 @@ const NavLink = ({ to, label, onClick, external }) => (
                 href={to}
                 className="relative px-3 py-1 text-gray-600 font-bold transition duration-300 hover:text-red-400"
                 onClick={onClick}
+                target="_self" // Change target to _self to open in the same tab
             >
                 {label}
                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 transition-all duration-300 hover:w-full"></span>

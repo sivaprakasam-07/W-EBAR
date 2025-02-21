@@ -38,7 +38,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-900">
+    <div className="h-screen flex items-center justify-center bg-gray-900 px-4 sm:px-6">
       {/* Glassmorphism Card */}
       <motion.div
         className="bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl rounded-2xl px-8 py-10 max-w-sm w-full text-center"

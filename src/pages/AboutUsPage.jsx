@@ -69,7 +69,7 @@ const AboutUs = () => {
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ delay: 1, duration: 0.6 }}
         >
-          <Link to="/">
+          <Link to="/landing">
             <Button>🏠 Back to Home</Button>
           </Link>
         </motion.div>
