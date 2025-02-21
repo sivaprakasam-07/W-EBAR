@@ -25,6 +25,8 @@ const Navbar = () => {
                 <div className="hidden md:flex space-x-6 text-lg">
                     <NavLink to="/landing" label="Home"/>
                     <NavLink to="https://we-bar-007.web.app/" label="Menu" />
+                    <NavLink to="/order" label="Order"/>
+                    <NavLink to="/analysis" label="Analysis"/>
                     <NavLink to="/about" label="About Us"/>
                     <NavLink to="/login" label="Login"/>
                 </div>
@@ -48,6 +50,7 @@ const Navbar = () => {
                 >
                     <NavLink to="/" label="Home" onClick={() => setIsOpen(false)} />
                     <NavLink to="https://we-bar-007.web.app/" label="Menu" onClick={() => setIsOpen(false)} />
+                    <NavLink to="/order" label="Menu" onClick={() => setIsOpen(false)} />
                     <NavLink to="/about" label="About Us" onClick={() => setIsOpen(false)} />
                     <NavLink to="/login" label="Login" onClick={() => setIsOpen(false)} />
                 </motion.div>

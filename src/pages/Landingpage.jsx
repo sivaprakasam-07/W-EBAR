@@ -54,13 +54,13 @@ const LandingPage = () => {
               <Flame /> Explore Menu
             </motion.button>
 
-            <Link to="/about">
+            <Link to="/order">
               <motion.button 
                 className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg shadow-md transition"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Utensils /> About Us
+                <Utensils /> Order Now
               </motion.button>
             </Link>
           </div>
