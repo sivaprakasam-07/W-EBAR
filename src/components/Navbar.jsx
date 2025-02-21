@@ -48,9 +48,10 @@ const Navbar = () => {
                     transition={{ duration: 0.3 }}
                     className="md:hidden flex flex-col items-center space-y-4 bg-black/30 backdrop-blur-lg py-4 mt-2 border border-white/20 rounded-lg"
                 >
-                    <NavLink to="/" label="Home" onClick={() => setIsOpen(false)} />
+                    <NavLink to="/landing" label="Home" onClick={() => setIsOpen(false)} />
                     <NavLink to="https://we-bar-007.web.app/" label="Menu" onClick={() => setIsOpen(false)} />
-                    <NavLink to="/order" label="Menu" onClick={() => setIsOpen(false)} />
+                    <NavLink to="/order" label="order" onClick={() => setIsOpen(false)} />
+                    <NavLink to="/analysis" label="Analysis" onClick={() => setIsOpen(false)} />
                     <NavLink to="/about" label="About Us" onClick={() => setIsOpen(false)} />
                     <NavLink to="/login" label="Login" onClick={() => setIsOpen(false)} />
                 </motion.div>
