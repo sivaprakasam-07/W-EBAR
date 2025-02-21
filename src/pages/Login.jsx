@@ -4,6 +4,7 @@ import { signInWithPopup, signInWithEmailAndPassword } from "firebase/auth";
 import { auth, provider } from "../firebase"; // Import Firebase Auth Config
 import { FcGoogle } from "react-icons/fc"; // Google Icon
 import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { toast } from "react-hot-toast"; // Import toast
 
 const LoginPage = () => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -16,7 +17,8 @@ const LoginPage = () => {
     try {
       const result = await signInWithPopup(auth, provider);
       console.log("User signed in:", result.user);
-      navigate("/"); // Redirect to landing page
+      toast.success("Login successful!"); // Show success toast
+      navigate("/landing"); // Redirect to landing page
     } catch (error) {
       console.error("Google Sign-in Error:", error.message);
     }
@@ -27,7 +29,8 @@ const LoginPage = () => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log("Signed in:", userCredential.user);
-      navigate("/"); // Redirect to landing page
+      toast.success("Login successful!"); // Show success toast
+      navigate("/landing"); // Redirect to landing page
     } catch (error) {
       console.error("Email Sign-in Error:", error.message);
       setError(error.message); // Display error message

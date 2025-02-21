@@ -45,7 +45,7 @@ const LandingPage = () => {
 
           {/* Buttons with Animation */}
           <div className="mt-6 flex flex-col md:flex-row justify-center md:justify-start gap-6">
-            <Link to="/menu">
+            <a href="https://we-bar-007.web.app/" target="_blank" rel="noopener noreferrer">
               <motion.button 
                 className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg shadow-md transition"
                 whileHover={{ scale: 1.05 }}
@@ -53,7 +53,7 @@ const LandingPage = () => {
               >
                 <Flame /> Explore Menu
               </motion.button>
-            </Link>
+            </a>
             <Link to="/about">
               <motion.button 
                 className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg shadow-md transition"
