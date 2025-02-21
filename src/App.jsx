@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import LandingPage from "./pages/LandingPage"; // ✅ Ensure correct case
+import LandingPage from "./pages/LandingPage"; 
 import MenuPage from "./pages/MenuPage";
-import AboutusPage from "./pages/AboutusPage"; // ✅ Ensure correct case
-import OrderPage from "./pages/OrderPage"; // ✅ Import Order Page
-import DailyAnalysis from "./pages/DailyAnalysis"; // ✅ Import Daily Analysis Page
+import AboutusPage from "./pages/AboutusPage";
+import OrderPage from "./pages/OrderPage"; 
+import DailyAnalysis from "./pages/DailyAnalysis";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import { Toaster } from "react-hot-toast";
@@ -22,8 +22,8 @@ const App = () => {
                         <Route path="/menu" element={<MenuPage />} />
                         <Route path="/about" element={<AboutusPage />} />
                         <Route path="/login" element={<Login />} />
-                        <Route path="/order" element={<OrderPage />} /> {/* ✅ Added Order Page */}
-                        <Route path="/analysis" element={<DailyAnalysis />} /> {/* ✅ Added Daily Analysis Page */}
+                        <Route path="/order" element={<OrderPage />} /> 
+                        <Route path="/analysis" element={<DailyAnalysis />} /> 
                     </Routes>
                 </div>
             </div>
