@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import LandingPage from "./pages/Landingpage"; // Corrected import path
 import MenuPage from "./pages/MenuPage";
-import AboutUs from "./pages/AboutusPage"; // Corrected import path
+import Aboutus from "./pages/AboutusPage"; // Corrected import path
 import Navbar from "./components/Navbar"; // Corrected import path
 import Login from "./pages/Login";
 import { Toaster } from "react-hot-toast"; // Import Toaster
