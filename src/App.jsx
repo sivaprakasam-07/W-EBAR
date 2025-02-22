@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
+import LandingPage from "./pages/LandingPage.jsx";
 import MenuPage from "./pages/MenuPage";
 import AboutusPage from "./pages/AboutusPage";
 import OrderPage from "./pages/OrderPage";
