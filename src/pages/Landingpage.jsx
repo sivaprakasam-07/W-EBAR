@@ -20,10 +20,10 @@ const LandingPage = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       {/* Main Content */}
-      <motion.div 
+      <motion.div
         className="z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl w-full p-8 text-white pl-10 md:pl-24"
-        initial={{ opacity: 0, y: 50 }} 
-        animate={{ opacity: 1, y: 0 }} 
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
         {/* Left Side: Empty for better layout */}
@@ -31,7 +31,7 @@ const LandingPage = () => {
 
         {/* Right Side: Text Content */}
         <div className="text-center md:text-left space-y-6">
-          <motion.h1 
+          <motion.h1
             className="text-4xl md:text-6xl font-bold text-primary drop-shadow-lg"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ const LandingPage = () => {
 
           {/* Buttons with Animation */}
           <div className="mt-6 flex flex-col md:flex-row justify-center md:justify-start gap-6">
-            <motion.button 
+            <motion.button
               className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg shadow-md transition"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -55,7 +55,7 @@ const LandingPage = () => {
             </motion.button>
 
             <Link to="/order">
-              <motion.button 
+              <motion.button
                 className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg shadow-md transition"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
