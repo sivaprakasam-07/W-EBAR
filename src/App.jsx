@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import LandingPage from "./pages/LandingPage"; 
+import LandingPage from "./pages/LandingPage.jsx";
 import MenuPage from "./pages/MenuPage";
 import AboutusPage from "./pages/AboutusPage";
-import OrderPage from "./pages/OrderPage"; 
+import OrderPage from "./pages/OrderPage";
 import DailyAnalysis from "./pages/DailyAnalysis";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
@@ -22,8 +22,8 @@ const App = () => {
                         <Route path="/menu" element={<MenuPage />} />
                         <Route path="/about" element={<AboutusPage />} />
                         <Route path="/login" element={<Login />} />
-                        <Route path="/order" element={<OrderPage />} /> 
-                        <Route path="/analysis" element={<DailyAnalysis />} /> 
+                        <Route path="/order" element={<OrderPage />} />
+                        <Route path="/analysis" element={<DailyAnalysis />} />
                     </Routes>
                 </div>
             </div>
