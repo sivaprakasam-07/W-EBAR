@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   purge: false, // Add this line if using Tailwind CSS v2.x
   content: [
     "./index.html",
