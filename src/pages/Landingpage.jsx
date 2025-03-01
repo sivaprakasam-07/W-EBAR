@@ -8,7 +8,7 @@ const LandingPage = () => {
     <div className="relative h-screen flex items-center justify-end px-4 md:px-6 bg-cover bg-center overflow-hidden">
       {/* Background Image with Parallax Effect */}
       <motion.img
-        src="src/assets/landing bg.jpg"
+        src="src\assets\landing bg.jpg" // Update this line with the new image path
         alt="Landing Background"
         className="absolute inset-0 w-full h-full object-cover z-0"
         initial={{ scale: 1.1 }}

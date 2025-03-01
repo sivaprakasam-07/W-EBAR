@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import LandingPage from "./pages/LandingPage"; 
-import MenuPage from "./pages/MenuPage";
+import LandingPage from "./pages/Landingpage"; 
 import AboutusPage from "./pages/AboutusPage";
 import OrderPage from "./pages/OrderPage"; 
 import DailyAnalysis from "./pages/DailyAnalysis";
@@ -19,7 +18,6 @@ const App = () => {
                     <Routes>
                         <Route path="/" element={<Navigate to="/login" />} />
                         <Route path="/landing" element={<LandingPage />} />
-                        <Route path="/menu" element={<MenuPage />} />
                         <Route path="/about" element={<AboutusPage />} />
                         <Route path="/login" element={<Login />} />
                         <Route path="/order" element={<OrderPage />} /> 
