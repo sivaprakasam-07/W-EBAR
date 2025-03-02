@@ -24,6 +24,8 @@ Welcome to the **KFC AR Experience**! This web application allows users to inter
 ✅ **Frontend:** React + Vite, Tailwind CSS, ShadCN/UI, Framer Motion, Lucide Icons  
 ✅ **WebAR:** Three.js, WebXR, 8thWall, A-Frame *(depending on implementation)*  
 ✅ **Authentication:** Firebase (Google Authentication)  
+✅ **Database:** Firebase  
+✅ **Hosting:** Firebase  
 
 ---
 
@@ -41,3 +43,41 @@ Welcome to the **KFC AR Experience**! This web application allows users to inter
 ├── 📄 tailwind.config.js    # Tailwind CSS configuration
 ├── 📄 vite.config.js        # Vite configuration
 └── 📄 README.md             # Project documentation
+```
+
+---
+
+## 👥 Team Members  
+1. **Sivaprakasam T** - Web Developer  
+2. **Shriram S** - AR Developer  
+3. **Priyadharshini S** - AR Developer  
+4. **Subasri R** - 3D Model Developer  
+
+---
+
+## 🚀 Getting Started  
+### Prerequisites  
+- Node.js & npm installed  
+- Vite for development  
+
+### Installation  
+```bash
+# Clone the repository
+git clone https://github.com/your-repo/kfc-ar-experience.git
+cd kfc-ar-experience
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+### Deployment  
+- Hosted on Firebase: [KFC AR Experience](https://we-bar-03.web.app)  
+
+---
+
+## 📬 Contact  
+For queries or contributions, contact any team member or open an issue in the repository.
+
