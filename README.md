@@ -91,5 +91,6 @@ npm run dev
 ---
 
 ## 📬 Contact  
+SIVAPRAKASAM T-tamilmanisivaprakasam5@gmail.com
 For queries or contributions, contact any team member or open an issue in the repository.
 
