@@ -86,7 +86,7 @@ npm run dev
 ```
 
 ### Deployment  
-- Hosted on Firebase: [KFC AR Experience](https://we-bar-03.web.app)  
+- Hosted on Firebase: [W-EBAR](https://we-bar-03.web.app)  
 
 ---
 
