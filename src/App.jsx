@@ -7,6 +7,7 @@ import DailyAnalysis from "./pages/DailyAnalysis";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import { Toaster } from "react-hot-toast";
+import ViewOrdersPage from "./pages/ViewOrdersPage";
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const App = () => {
                         <Route path="/login" element={<Login />} />
                         <Route path="/order" element={<OrderPage />} /> 
                         <Route path="/analysis" element={<DailyAnalysis />} /> 
+                        <Route path="/view-orders" element={<ViewOrdersPage />} />
                     </Routes>
                 </div>
             </div>

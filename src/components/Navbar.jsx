@@ -27,6 +27,7 @@ const Navbar = () => {
                     <NavLink to="https://we-bar-007.web.app/" label="Menu" />
                     <NavLink to="/order" label="Order"/>
                     <NavLink to="/analysis" label="Analysis"/>
+                    <NavLink to="/view-orders" label="Orders"/>
                     <NavLink to="/about" label="About Us"/>
                     <NavLink to="/login" label="Login"/>
                 </div>
