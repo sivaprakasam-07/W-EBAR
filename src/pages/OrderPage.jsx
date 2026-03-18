@@ -5,6 +5,7 @@ import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import toast from "react-hot-toast";
 import AIAssistant from "../components/AIAssistant";
 import AIDescriptionBox from "../components/AIDescriptionBox";
+import AIComboBox from "../components/AIComboBox";
 
 const menuItems = [
     "Burger", "Pizza", "Fries", "Coke", "Ice Cream",
@@ -109,6 +110,10 @@ const OrderPage = () => {
             <AIDescriptionBox foodName={selectedFood} />
 
             <AIAssistant onSelectFood={handleSelectFood} />
+
+            {selectedItems.length > 0 && (
+                <AIComboBox selectedItems={selectedItems} />
+            )}
 
             <motion.button
                 onClick={handleOrderSubmit}
