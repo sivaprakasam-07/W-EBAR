@@ -59,13 +59,7 @@ Welcome to the **KFC AR Experience**! This web application allows users to inter
 
 ---
 
-## 👥 Team Members  
-1. **Sivaprakasam T** - Web Developer  
-2. **Shriram S** - AR Developer  
-3. **Priyadharshini S** - AR Developer  
-4. **Subasri R** - 3D Model Developer  
 
----
 
 ## 🚀 Getting Started  
 ### Prerequisites  
